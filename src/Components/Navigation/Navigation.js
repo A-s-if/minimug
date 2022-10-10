@@ -167,9 +167,7 @@ const Navigation = () => {
 
                     {/* Shop Div */}
                     <ShopDiv>
-                    <Link to='/shop'>
                     <p>Shop <KeyboardArrowDownIcon fontSize='small'></KeyboardArrowDownIcon></p>
-                    </Link>
                     <div>
                     <ul>
                     <li>Filter left sidebar</li>
@@ -215,9 +213,7 @@ const Navigation = () => {
 
                     {/* Product Div */}
                         <ProductsDiv>
-                        <Link to='/products'>
                     <p>Products <KeyboardArrowDownIcon fontSize='small'></KeyboardArrowDownIcon></p>
-                    </Link>
                     <div>
                     <ul>
                     <li>Grid 1 columns</li>
@@ -299,9 +295,7 @@ const Navigation = () => {
 
                         {/* Blogs Div */}
                         <BlogsDiv>
-                    <Link to='/blogs'>
                     <p>Blogs <KeyboardArrowDownIcon fontSize='small'></KeyboardArrowDownIcon></p>
-                    </Link>
                     <div>
                         <ul>
                             <Link to="/grid-layout"><li>Grid layout</li></Link>
@@ -318,9 +312,7 @@ const Navigation = () => {
 
                         {/* Feature Div */}
                        <FeaturesDiv> 
-                    <Link to='/features'>
                     <p>Features <KeyboardArrowDownIcon fontSize='small'></KeyboardArrowDownIcon></p>
-                </Link>
 
                 <div>
                     <ul>
