@@ -1,0 +1,22 @@
+[
+    {
+        "imageURL":"https://cdn.shopify.com/s/files/1/0591/1350/4958/articles/8.jpg?v=1628336199&width=360",
+        "category":"FALL",
+        "header":"The best fall wardrobe additions",
+        "details":"To make your shopping as effortless as possible, we've gone through the newly-reduced offerings to..."
+    },
+
+    {
+        "imageURL":"https://cdn.shopify.com/s/files/1/0591/1350/4958/articles/15.jpg?v=1628336201&width=360",
+        "category":"COLOR",
+        "header":"Sweeten your summer wardrobes",
+        "details":"From freshly-churned butter to electric lemon, yellow has become quite a popular trend over the..."
+    },
+
+    {
+        "imageURL":"https://cdn.shopify.com/s/files/1/0591/1350/4958/articles/blog.jpg?v=1628336202&width=360",
+        "category":"FASHION TIPS",
+        "header":"You can wear them with just about anything",
+        "details":"We are very excited to introduce the Man Overboard kit: essentials for life on the..."
+    }
+]
