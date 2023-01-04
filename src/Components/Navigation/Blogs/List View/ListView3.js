@@ -33,7 +33,7 @@ const ListView3 = () => {
                 <ListViewProductLeftDiv>
                     {
                         ListViewData.map(data=> <div>
-                            <img src={data.imageURL} alt="" />
+                            <img src={data.imageURL} alt="" loading="eager" />
                             <div>
                                 <h5>{data.name}</h5>
                                 <h3>{data.header}</h3>

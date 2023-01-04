@@ -30,7 +30,7 @@ const GridLayoutPage2 = () => {
                 <GridLayoutProductLeftContainerDiv>
                     {
                         GridLayoutPage2Data.map(data=> <div>
-                            <img src={data.imageURL} alt="" />
+                            <img src={data.imageURL} alt="" loading="eager" />
                             <h5>{data.category}</h5>
                             <h3>{data.header}</h3>
                             <p>{data.details}</p>
@@ -110,6 +110,7 @@ div{
     img{
         width:220px;
         height:120px;
+        cursor:pointer;
     }
 
     button{

@@ -10,7 +10,7 @@ import Contact1 from './Components/Pages/Contact1';
 import Contact2 from './Components/Pages/Contact2';
 import FAQs from './Components/Pages/FAQs';
 import FindAStore from './Components/Pages/FindAStore';
-import MyAccount from './Components/Pages/MyAccount'
+import MyAccount from './Components/Pages/MyAccount';
 import ListView from './Components/Navigation/Blogs/List View/ListView';
 import GridLayoutPage1 from './Components/Navigation/Blogs/Grid Layout/GridLayoutPage1';
 import GridLayoutPage2 from './Components/Navigation/Blogs/Grid Layout/GridLayoutPage2';
@@ -24,11 +24,18 @@ import BlogWithRightSidebarPage2 from './Components/Navigation/Blogs/BlogWithRig
 import BlogWithRightSidebarPage3 from './Components/Navigation/Blogs/BlogWithRightSidebar/BlogWithRightSidebarPage3';
 import SinglePostStyle1 from './Components/Navigation/Blogs/SinglePostStyle1/SinglePostStyle1';
 import SinglePostStyle2 from './Components/Navigation/Blogs/SinglePostStyle2/SinglePostStyle2';
+import { createContext,useState } from 'react';
+import SingleProduct from './Components/Single Product/SingleProduct';
 
+
+export const Context=createContext();
 function App() {
+  const [Data,setData]=useState({});
   
   return (
-    <div className="App">
+    <div>
+      <Context.Provider value={[Data,setData]}>
+         
       <Router>
         <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -51,13 +58,11 @@ function App() {
         <Route path='/blog-with-right-sidebar-page3' element={<BlogWithRightSidebarPage3></BlogWithRightSidebarPage3>}></Route>
         <Route path='/single-post-style1' element={<SinglePostStyle1></SinglePostStyle1>}></Route>
         <Route path='/single-post-style2' element={<SinglePostStyle2></SinglePostStyle2>}></Route>
-        
+        <Route path='/product-details' element={<SingleProduct></SingleProduct>}></Route>
         </Routes>
          
       </Router>
-      
-      
-      
+      </Context.Provider>
     </div>
   );
 }

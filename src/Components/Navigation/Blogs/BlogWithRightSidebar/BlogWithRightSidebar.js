@@ -36,7 +36,7 @@ const BlogWithRightSidebar = () => {
                 <ListViewProductLeftDiv>
                     {
                         sliceData.map(data=> <div>
-                            <img src={data.bgImage} alt="" />
+                            <img src={data.bgImage} alt="" loading="eager" />
                             <div>
                                 <h5>{data.name}</h5>
                                 <h3>{data.header}</h3>
@@ -106,7 +106,7 @@ const BlogWithRightSidebar = () => {
                             <br />
                         <div>
 
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ek6NZj9DWl4SoPli05dJ2PdHF-M9R9QTzQ&usqp=CAU" alt="" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ek6NZj9DWl4SoPli05dJ2PdHF-M9R9QTzQ&usqp=CAU" alt="" loading="eager" />
 
                         <FacebookIconDiv  sx={{
                             fontSize:'30px',
@@ -174,6 +174,9 @@ justify-content:space-evenly;
 /* List View Product Left Div */
 
 const ListViewProductLeftDiv=style.div`
+img{
+    cursor:pointer;
+}
 div{
     @media(max-width:1095px){
         img{

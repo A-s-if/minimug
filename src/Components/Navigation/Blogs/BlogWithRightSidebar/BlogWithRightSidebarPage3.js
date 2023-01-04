@@ -105,7 +105,7 @@ const BlogWithRightSidebarPage3 = () => {
                             <br />
                         <div>
 
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ek6NZj9DWl4SoPli05dJ2PdHF-M9R9QTzQ&usqp=CAU" alt="" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ek6NZj9DWl4SoPli05dJ2PdHF-M9R9QTzQ&usqp=CAU" alt="" loading="eager" />
 
                         <FacebookIcon  sx={{
                             fontSize:'30px',
@@ -170,6 +170,9 @@ justify-content:space-evenly;
 /* List View Product Left Div */
 
 const ListViewProductLeftDiv=style.div`
+img{
+    cursor:pointer;
+}
 div{
     display:flex;
     margin-top:30px;

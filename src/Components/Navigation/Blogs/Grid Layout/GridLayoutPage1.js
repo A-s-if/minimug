@@ -28,7 +28,7 @@ const GridLayoutPage1 = () => {
                 <GridLayoutProductLeftDiv>
                         {
                             GridLayoutPage1Data.map(data=> <GridLayoutProductLeftContainerDiv>
-                                <img src={data.bgImage} alt="" />
+                                <img src={data.bgImage} alt="" loading="eager" />
                                 <h5>{data.name}</h5>
                                 <h3>{data.header}</h3>
                                 <p>{data.details}</p>
@@ -101,6 +101,9 @@ flex-wrap:wrap;
 justify-content:space-evenly;
 padding-bottom:50px;
 margin-top:20px;
+img{
+    cursor:pointer;
+}
 `
 
 const GridLayoutProductLeftContainerDiv=style.div`

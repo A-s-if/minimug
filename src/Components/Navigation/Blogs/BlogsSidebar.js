@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Context } from '../../../App';
 import style from 'styled-components';
+import { Link } from 'react-router-dom';
 import BlogsSidebarInstagramData from '../../JSON DATA/Blogs/BlogsSidebar/Instagram.json';
 import BlogsSidebarRecentPostData from '../../JSON DATA/Blogs/GridLayoutPage1/GridLayoutPage1.json';
 
 const BlogsSidebar = () => {
 const recentPostData=BlogsSidebarRecentPostData.slice(0,3);
-console.log(BlogsSidebarInstagramData)
+const [Data,setData]=useContext(Context);
     return (
         <div>
+            {/* Gridlayout Product Right Div */}
             <GridLayoutProductRightDiv>
+                {/* Catagories Div */}
                     <CategoriesDiv>
                         <h3>Categories</h3>
                         <p>All products</p>
@@ -17,15 +21,18 @@ console.log(BlogsSidebarInstagramData)
                         <p>Accessories</p>
                     </CategoriesDiv>
 
+                        {/* Recent Post Div */}
                     <RecentPostDiv>
                         <h2>Recent Post</h2>
                         {
-                            recentPostData.map(data=> <div>
-                                <img src={data.bgImage} alt="" />
+                            recentPostData.map(data=> <div onClick={()=>setData(data)}>
+                                <Link to="/product-details">
+                                <img src={data.bgImage} alt="" loading="eager" />
                                 <div>
                                     <h6>{data.name}</h6>
                                     <h4>{data.header}</h4>
                                 </div>
+                                </Link>
                             </div>)
                         }
                     </RecentPostDiv>
@@ -52,7 +59,7 @@ console.log(BlogsSidebarInstagramData)
                         <h3>Instagram</h3>
                         <div>
                         {
-                            BlogsSidebarInstagramData.map(data=> <img src={data.bgImage} alt="" /> 
+                            BlogsSidebarInstagramData.map(data=> <img src={data.bgImage} alt="" loading="eager" /> 
                             )
                         }
                         </div>
@@ -82,12 +89,18 @@ p{
 `
 
 export const RecentPostDiv=style.div`
+margin-top:50px;
 height:300px;
 display:flex;
 flex-direction:column;
 justify-content:space-evenly;
 div{
+    cursor:pointer;
     display:flex;
+    a{
+        text-decoration:none;
+        color:black;
+    }
     img{
         width:90px;
     }
@@ -102,6 +115,7 @@ div{
 `
 
  const TagsDiv=style.div`
+ margin-top:50px;
 div{
     margin-top:10px;
     width:300px;

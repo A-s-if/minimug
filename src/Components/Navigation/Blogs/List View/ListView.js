@@ -33,7 +33,7 @@ const ListView = () => {
                 <ListViewProductLeftDiv>
                     {
                         sliceData.map(data=> <div>
-                            <img src={data.bgImage} alt="" />
+                            <img src={data.bgImage} alt="" loading="eager" />
                             <div>
                                 <h5>{data.name}</h5>
                                 <h3>{data.header}</h3>
@@ -100,6 +100,9 @@ justify-content:space-evenly;
 /* List View Product Left Div */
 
 export const ListViewProductLeftDiv=style.div`
+img{
+    cursor:pointer;
+}
 div{
     display:flex;
     margin-top:30px;

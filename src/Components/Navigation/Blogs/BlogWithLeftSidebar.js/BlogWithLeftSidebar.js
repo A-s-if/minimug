@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import style from 'styled-components';
 import Navigation from '../../Navigation';
 import BlogsSidebar from '../BlogsSidebar';
@@ -8,9 +8,14 @@ import { AboutUsDiv } from '../List View/ListView';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { Link } from 'react-router-dom';
 import Footer from '../../../Footer';
+import { Context } from '../../../../App';
 
 const BlogWithLeftSidebar = () => {
     const productData=ProductData.slice(0,6);
+    
+     const[Data,setData] =useContext(Context);
+     
+     
     return (
         <Container>
             {/* Navigation */}
@@ -18,6 +23,7 @@ const BlogWithLeftSidebar = () => {
 
             {/* About Us Div */}
             <AboutUsDiv>
+                
             <h1>Mix and Match</h1>
             <p><Link to="/">Home <ChevronRightIcon sx={{
                 position:'relative',
@@ -36,12 +42,14 @@ const BlogWithLeftSidebar = () => {
             {/* Right Product Div */}
             <RightProductDiv>
                 {
-                    productData.map(data=><div>
-                        <img src={data.bgImage} alt="" />
+                    productData.map((data)=> <div onClick={()=>setData(data)}>
+                        <Link to="/product-details">
+                        <img src={data.bgImage} alt="" loading="eager" />
                         <h5>{data.name}</h5>
                         <h3>{data.header}</h3>
                         <p>{data.details}</p>
                         <button>Read More</button>
+                        </Link>
                     </div>)
                 }
 
@@ -53,6 +61,7 @@ const BlogWithLeftSidebar = () => {
             </RightProductDiv>
 
             </ProductDiv>
+            
 
             {/* More Page Div */}
 
@@ -98,8 +107,13 @@ div{
     flex-wrap:wrap;
     text-align:center;
     align-items:center;
+    a{
+        text-decoration:none;
+        color:black;
+    }
     img{
         width:400px;
+        cursor:pointer;
     }
     button{
         width:70px;

@@ -30,7 +30,7 @@ const SinglePostStyle2 = () => {
             <h1>summer</h1>
             <h3>by Shopify API on Jul 31, 2021</h3>
             </SinglePostLeftHeaderDiv>
-            <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/articles/6.png?v=1628336185&width=940" alt="" />
+            <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/articles/6.png?v=1628336185&width=940" alt="" loading="eager" />
             <p>Before she had a budget-breaking bag named after her, Jane Birkin toted around a simple wicker basket. For this reason, what <br />
             was once a picnic essential became a chic summer accessory — and it remains a trusty and trendy warm-weather carryall.
             <br />
@@ -42,7 +42,7 @@ our favorites on sale to get you through the rest of summer in the chicest way p
 <p>Tags: Accessories, Life Style, Summer</p>
 <div>
     <h3>Share:</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ek6NZj9DWl4SoPli05dJ2PdHF-M9R9QTzQ&usqp=CAU" alt="" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ek6NZj9DWl4SoPli05dJ2PdHF-M9R9QTzQ&usqp=CAU" alt="" loading="eager" />
 
                         <Facebook />
 
@@ -85,7 +85,7 @@ our favorites on sale to get you through the rest of summer in the chicest way p
         <RelatedArticleProductContainerDiv>
             {
                 Product.map(pd=><RelatedArticleProductDiv>
-                        <img src={pd.bgImage} alt="" />
+                        <img src={pd.bgImage} alt="" loading="eager" />
                         <h3>{pd.header}</h3>
                     </RelatedArticleProductDiv>)
             }
@@ -146,7 +146,7 @@ our favorites on sale to get you through the rest of summer in the chicest way p
                             <br />
                         <div>
 
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ek6NZj9DWl4SoPli05dJ2PdHF-M9R9QTzQ&usqp=CAU" alt="" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ek6NZj9DWl4SoPli05dJ2PdHF-M9R9QTzQ&usqp=CAU" alt="" loading="eager" />
 
                         <FacebookIconDiv  sx={{
                             fontSize:'30px',

@@ -89,6 +89,9 @@ width:850px;
 display:flex;
 flex-wrap:wrap;
 justify-content:space-evenly;
+img{
+    cursor:pointer;
+}
 div{
     width:400px;
     display:flex;

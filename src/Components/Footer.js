@@ -53,7 +53,10 @@ const Footer = () => {
                             width:'55px'
                         }}>Wishlist <span></span> </p>
                         <br />
-                        <p >Product Compare <span></span></p>
+                        <p style={{
+                            width:'125px'
+                        }}>Product Compare <span></span></p>
+                        
                 </QuickLinksDiv>
 
                 {/* Our Store Div */}

@@ -17,6 +17,7 @@ const Home = () => {
     const [boutiqueEighthImage,setBoutiqueEighthImage]=useState(true);
     const [boutiqueNinethImage,setBoutiqueNinethImage]=useState(true);
     const [boutiqueTenthImage,setBoutiqueTenthImage]=useState(true);
+
     return (
         <Container>
             <Navigation></Navigation>
@@ -24,7 +25,7 @@ const Home = () => {
                 {/* First Div */}
             <FirstDiv>
                 <FirstLeftDiv>
-                    <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/files/1_8cd952d3-98b0-4fe2-a7f0-81c1ebf91b7d.jpg?v=1628328726&width=720" alt="" />
+                    <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/files/1_8cd952d3-98b0-4fe2-a7f0-81c1ebf91b7d.jpg?v=1628328726&width=720" alt="" loading="eager" />
                 </FirstLeftDiv>
 
                 <FirstRightDiv>
@@ -83,7 +84,7 @@ const Home = () => {
                 <BoutiqueImageDiv>
                 <BoutiqueFirstImage>
                     {
-                        boutiqueFirstImage? <img src="https://cdn.shopify.com/s/files/1/0248/3290/1223/products/LM85SU00015GN1GO_1024x1024.jpg?v=1602151614" alt="" /> : <img src="https://cdn.shopify.com/s/files/1/0248/3290/1223/products/LM85SU00017BK1CM_1024x1024.jpg?v=1602151605" alt="" />
+                        boutiqueFirstImage? <img src="https://cdn.shopify.com/s/files/1/0248/3290/1223/products/LM85SU00015GN1GO_1024x1024.jpg?v=1602151614" alt="" loading="eager" /> : <img src="https://cdn.shopify.com/s/files/1/0248/3290/1223/products/LM85SU00017BK1CM_1024x1024.jpg?v=1602151605" alt="" loading="eager" />
                     }
                     
                     <h4>Rounded Sunglasses</h4>
@@ -108,7 +109,7 @@ const Home = () => {
 
                 <BoutiqueSecondImage>
                     {
-                        boutiqueSecoundImage? <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc2%2Fb6%2Fc2b6c7a72caadaf1bd38ae502e5ee412368822f6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_shirtsblouses_shirts%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="" /> : <img src="https://img.shopstyle-cdn.com/sim/47/e1/47e15c621fd44440a15627128567a286_best/frankie-shop-lui-organic-cotton-poplin-shirt-pink.jpg" alt="" />
+                        boutiqueSecoundImage? <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc2%2Fb6%2Fc2b6c7a72caadaf1bd38ae502e5ee412368822f6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_shirtsblouses_shirts%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="" loading="eager" /> : <img src="https://img.shopstyle-cdn.com/sim/47/e1/47e15c621fd44440a15627128567a286_best/frankie-shop-lui-organic-cotton-poplin-shirt-pink.jpg" alt="" loading="eager" />
                     }
                     
                     <h4>Linen-blend Shirt</h4>
@@ -133,7 +134,7 @@ const Home = () => {
 
                 <BoutiqueThirdImage>
                     {
-                        boutiqueThirdImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/54_8558553c-a9dd-4474-bc2b-6707343dacbe.jpg?v=1628348240&width=493" alt="" /> : <img src="https://media.vogue.fr/photos/620babf0ac49caf24d57d9b3/master/w_1280,c_limit/agolde.jpg" alt="" />
+                        boutiqueThirdImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/54_8558553c-a9dd-4474-bc2b-6707343dacbe.jpg?v=1628348240&width=493" alt="" loading="eager" /> : <img src="https://media.vogue.fr/photos/620babf0ac49caf24d57d9b3/master/w_1280,c_limit/agolde.jpg" alt="" loading="eager" />
                     }
                     
                     <h4>Boxy Denim Jacket</h4>
@@ -158,7 +159,7 @@ const Home = () => {
 
                 <BoutiqueForthImage>
                     {
-                        boutiqueForthImage? <img src="https://onceit-products.imgix.net/49aab720-e8b9-11ea-865c-bd929f55eeab.jpg?w=1800&h=1800&fit=clip&fm=jpg&q=75&auto=format%2Ccompress" alt="" /> : <img src="https://cdn.shopify.com/s/files/1/0088/9510/3012/products/moana-road-sunglasses-razzle-dazzle-brown-3671-funky-gifts-nz-3_400x_59fb786c-9964-4c65-a0cc-c174f3d89947_360x.webp?v=1648520952" alt="" />
+                        boutiqueForthImage? <img src="https://onceit-products.imgix.net/49aab720-e8b9-11ea-865c-bd929f55eeab.jpg?w=1800&h=1800&fit=clip&fm=jpg&q=75&auto=format%2Ccompress" alt="" loading="eager" /> : <img src="https://cdn.shopify.com/s/files/1/0088/9510/3012/products/moana-road-sunglasses-razzle-dazzle-brown-3671-funky-gifts-nz-3_400x_59fb786c-9964-4c65-a0cc-c174f3d89947_360x.webp?v=1648520952" alt="" loading="eager" />
                     }
                     
                     <h4>Polarised Sunglasses</h4>
@@ -183,7 +184,7 @@ const Home = () => {
 
                 <BoutiqueFifthImage>
                     {
-                        boutiqueFifthImage? <img src="https://cdn.shopify.com/s/files/1/0602/4170/7230/products/RetroLesBlackfront_360x.png?v=1655255824" alt="" /> : <img src="https://new.casademoda.cl/wp-content/uploads/2021/12/product_fashion_29_b_1-570x760.jpg" alt="" />
+                        boutiqueFifthImage? <img src="https://cdn.shopify.com/s/files/1/0602/4170/7230/products/RetroLesBlackfront_360x.png?v=1655255824" alt="" loading="eager" /> : <img src="https://new.casademoda.cl/wp-content/uploads/2021/12/product_fashion_29_b_1-570x760.jpg" alt="" loading="eager" />
                     }
                     
                     <h4>Rounded Sunglasses</h4>
@@ -208,7 +209,7 @@ const Home = () => {
 
                 <BoutiqueSixthImage>
                     {
-                        boutiqueSixthImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/45.jpg?v=1628348202&width=493" alt="" /> : <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/45c.jpg?v=1628348202" alt="" />
+                        boutiqueSixthImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/45.jpg?v=1628348202&width=493" alt="" loading="eager" /> : <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/45c.jpg?v=1628348202" alt="" loading="eager" />
                     }
                     
                     <h4>Quilted Shopper </h4>
@@ -233,7 +234,7 @@ const Home = () => {
 
                 <BoutiqueSeventhImage>
                     {
-                        boutiqueSeventhImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/43_cd75fbff-17e5-443f-9c4b-53ca3906de5c.jpg?v=1628348187" alt="" /> : <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/43d_b58089d0-afcd-4866-92a6-3891d270895d.jpg?v=1628348187&width=493" alt="" />
+                        boutiqueSeventhImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/43_cd75fbff-17e5-443f-9c4b-53ca3906de5c.jpg?v=1628348187" alt="" loading="eager" /> : <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/43d_b58089d0-afcd-4866-92a6-3891d270895d.jpg?v=1628348187&width=493" alt="" loading="eager" />
                     }
                     
                     <h4>Light Denim Jacket </h4>
@@ -258,7 +259,7 @@ const Home = () => {
 
                 <BoutiqueEightImage>
                     {
-                        boutiqueEighthImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/42.jpg?v=1628348181" alt="" /> : <img src="https://new.casademoda.cl/wp-content/uploads/2021/12/https://cdn.shopify.com/s/files/1/0591/1350/4958/products/42d.jpg?v=1628348181&width=493" alt="" />
+                        boutiqueEighthImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/42.jpg?v=1628348181" alt="" loading="eager" /> : <img src="https://new.casademoda.cl/wp-content/uploads/2021/12/https://cdn.shopify.com/s/files/1/0591/1350/4958/products/42d.jpg?v=1628348181&width=493" alt="" loading="eager" />
                     }
                     
                     <h4>Quilted Shoulder Bag </h4>
@@ -283,7 +284,7 @@ const Home = () => {
 
                 <BoutiqueNinethImage>
                     {
-                        boutiqueNinethImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/38_4b6920a7-196b-49a2-952d-2295e64a9b71.jpg?v=1628348168" alt="" /> : <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/38d_a370d3b4-e3dc-4171-982f-c9ed2d5c2538.jpg?v=1628348168&width=493" alt="" />
+                        boutiqueNinethImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/38_4b6920a7-196b-49a2-952d-2295e64a9b71.jpg?v=1628348168" alt="" loading="eager" /> : <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/38d_a370d3b4-e3dc-4171-982f-c9ed2d5c2538.jpg?v=1628348168&width=493" alt="" loading="eager" />
                     }
                     
                     <h4>High Ankle Jeans</h4>
@@ -305,10 +306,11 @@ const Home = () => {
                     }}></div>
                     </ChoiceColorDiv>
                 </BoutiqueNinethImage>
+               
 
                 <BoutiqueTenthImage>
                     {
-                        boutiqueTenthImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/35h.jpg?v=1628348161" alt="" /> : <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/35d.jpg?v=1628348161&width=493" alt="" />
+                        boutiqueTenthImage? <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/35h.jpg?v=1628348161" alt="" loading="eager" /> : <img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/products/35d.jpg?v=1628348161&width=493" alt="" loading="eager" />
                     }
                     
                     <h4>Denim Jacket</h4>
@@ -341,7 +343,7 @@ const Home = () => {
             <ServicesDiv>
 
                 <FreeShippingDiv>
-                    <ServicesIconDiv><img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/files/1_292dc3a2-215e-4ce3-afba-7b00845e162f.png?v=1628328725" alt="" /></ServicesIconDiv>
+                    <ServicesIconDiv><img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/files/1_292dc3a2-215e-4ce3-afba-7b00845e162f.png?v=1628328725" alt="" loading="eager" /></ServicesIconDiv>
                     <div>
                         <h3>Free Shipping</h3>
                         <p>Tell about your service.</p>
@@ -349,7 +351,7 @@ const Home = () => {
                 </FreeShippingDiv>
 
                 <MoneyGuaranteeDiv>
-                    <ServicesIconDiv><img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/files/2_4ab3f0fa-7ff5-4f0d-ba62-503f7f2fc192.png?v=1628328726" alt="" /></ServicesIconDiv>
+                    <ServicesIconDiv><img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/files/2_4ab3f0fa-7ff5-4f0d-ba62-503f7f2fc192.png?v=1628328726" alt="" loading="eager" /></ServicesIconDiv>
                     <div>
                         <h3>Money Guarantee</h3>
                         <p>Within 30 days for an exchange.</p>
@@ -357,7 +359,7 @@ const Home = () => {
                 </MoneyGuaranteeDiv>
 
                 <OnlineSupport>
-                    <ServicesIconDiv><img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/files/3_6044e4d8-7c0b-4f31-aac4-89baf1f7a0a9.png?v=1628328727" alt="" /></ServicesIconDiv>
+                    <ServicesIconDiv><img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/files/3_6044e4d8-7c0b-4f31-aac4-89baf1f7a0a9.png?v=1628328727" alt="" loading="eager" /></ServicesIconDiv>
                     <div>
                         <h3>Online Support</h3>
                         <p>24 hours a day, 7 days a week.</p>
@@ -365,7 +367,7 @@ const Home = () => {
                 </OnlineSupport>
 
                 <FlexiblePayment>
-                    <ServicesIconDiv><img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/files/4_2f378f25-cac8-415a-b98b-e491bd3fd4f3.png?v=1628328727" alt="" /></ServicesIconDiv>
+                    <ServicesIconDiv><img src="https://cdn.shopify.com/s/files/1/0591/1350/4958/files/4_2f378f25-cac8-415a-b98b-e491bd3fd4f3.png?v=1628328727" alt="" loading="eager" /></ServicesIconDiv>
                     <div>
                         <h3>Flexible Payment</h3>
                         <p>Pay with Multiple Credit Cards.</p>
@@ -373,6 +375,7 @@ const Home = () => {
                 </FlexiblePayment>
 
             </ServicesDiv>
+            
                     {/* Footer */}
             <Footer></Footer>
         </Container>
@@ -422,7 +425,7 @@ button{
         height:2px;
         background-color:black;
         position:absolute;
-        top:590px;
+        top:620px;
         transition:1s;
     }
      :hover span{
