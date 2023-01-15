@@ -1,3 +1,7 @@
+# Project Title
+Minimog
+# About Project
+This is a E-commerce site. You can shop online for clothes, bags, shoes, etc. using this site.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

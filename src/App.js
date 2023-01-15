@@ -26,6 +26,7 @@ import SinglePostStyle1 from './Components/Navigation/Blogs/SinglePostStyle1/Sin
 import SinglePostStyle2 from './Components/Navigation/Blogs/SinglePostStyle2/SinglePostStyle2';
 import { createContext,useState } from 'react';
 import SingleProduct from './Components/Single Product/SingleProduct';
+import WomenWears from './Components/Navigation/Home/WomenWears';
 
 
 export const Context=createContext();
@@ -59,6 +60,7 @@ function App() {
         <Route path='/single-post-style1' element={<SinglePostStyle1></SinglePostStyle1>}></Route>
         <Route path='/single-post-style2' element={<SinglePostStyle2></SinglePostStyle2>}></Route>
         <Route path='/product-details' element={<SingleProduct></SingleProduct>}></Route>
+        <Route path='/women-wears' element={<WomenWears></WomenWears>}></Route>
         </Routes>
          
       </Router>

@@ -74,7 +74,7 @@ const Navigation = () => {
                     <div>
                         <ul>
                             <Link to="/"><li>Main home</li></Link>
-                            <Link to="/"><li>Women wears</li></Link>
+                            <Link to="/women-wears"><li>Women wears</li></Link>
                             <Link to="/"><li>Local brand</li></Link>
                             
                             <li>Vogue</li>
